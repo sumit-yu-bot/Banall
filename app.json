@@ -3,8 +3,9 @@
     "description": "Power Packed Banall Within Seconds.",
     "keywords": ["Zaid", "banall"],
     "repository": "https://github.com/ITZ-ZAID/Banall",
-  "stack": "container",
-    "env": {
+   "logo": "https://telegra.ph/file/1f63de6e3ce65ef6b9f00.jpg",
+   "image": "heroku/python",
+       "env": {
         "TELEGRAM_TOKEN": {
             "description": "Bot Token Else leave blank",
             "required": true
@@ -23,7 +24,13 @@
             "description": "Fill Api iD from telegram.prg",
             "required": true,
             "value": ""
-        }
 
-    }
+      }
+   },
+   "formation": {
+            "worker": {
+                "quantity": 1,
+                "size": "eco"
+            }
+        }
   }
